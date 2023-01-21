@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App using CDN</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+<div id="root"></div>    
+
+
+<script>
+    // Creat React JSX
+    let h1 = React.createElement("h1", null, "Hi Friends")
+
+    // Rendering
+    ReactDOM.render(h1, document.getElementById('root'))
+</script>
+</body>
+</html>
+
+
+Assignment-2
+1. Create a React Application using CDN to render the following list
+<ul>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>React</li>
+</ul>
+
+2. Clean the First React App and Render your Name with CSS. 
