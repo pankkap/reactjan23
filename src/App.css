@@ -1,0 +1,18 @@
+body
+{
+    background-color: deepskyblue;
+    font-family: arial;
+}
+
+img
+{
+    width: 500px;
+    height: 100px;
+}
+#centerImg
+{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
