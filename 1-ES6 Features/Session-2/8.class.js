@@ -16,17 +16,18 @@ class Training
 
 let obj1 = new Training("React", 40, 3000.0)
 obj1.display();
+ 
 
 
 
 // ES5 way to create Class
 // function Training1()
 // {
-//     this.T_name 
-//     this.T_name 
-//     this.T_name 
+//     this.T_name = "Javascript";
+//     this.T_duration = "40";
+//     this.T_cost = 3000;
 
-//     this.display()
+//     this.display = function()
 //     {
 //         console.log(this.T_name)
 //     }

@@ -1,11 +1,11 @@
 import React from 'react'
 // To create React JSX
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 // To render JSX
+import App from './App'
 
-//JSX
-let element  = <h1>Bye Bye HTML, CSS, JS</h1>;
+// Rendering as per React 18
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Rendering
-ReactDOM.render(element, document.getElementById('root'))
+root.render(<App />);
 
