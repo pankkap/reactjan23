@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 // To create React JSX
 import ReactDOM from 'react-dom/client'
 // To render JSX

@@ -1,5 +1,10 @@
 // Linking to External CSS
 import './App.css';
+import MyComponent, { CustomComp2 } from './components/CustomComps';
+import FirstComponent from './components/FirstComponent';
+import SecondComponent from './components/SecondComponent';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+
 // Creating Image Variable
 import myLogo from './images/banner.jpg'
 
@@ -50,26 +55,42 @@ let mystyling = {
 function App(){
     return (
         <>
-            <div id="centerImg">
-            <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1200px-Google_Images_2015_logo.svg.png"} alt="" />
-            </div>
-            <h1>This is App Component</h1>
+        <h1 className='text-danger text-center p-5'>This is App Component</h1>
+        <hr/>
+        <FirstComponent/>
+        <br/>
+        <SecondComponent/>
+        <br/>
+        <div className='container bg-dark text-white text-center p-3 mb-5'>
+        <MyComponent/>
+        <CustomComp2/>
+        </div>
+        {/* Ctrl + spacebar for recomendation code*/}
+        
+
+
+
+
+
+            {/* <div id="centerImg">
+            <img src={myLogo} alt="" />
+            </div> */}
             
             {/* Simple JSX Expression */}
             {/* {} is used to execute jsx code */}
-            {17*5-10/2+35} 
-            {<br/>}
+            {/* {17*5-10/2+35}  */}
+            {/* {<br/>}
             {<span style={{color:'red', fontSize:'30px'}}>{name}</span>}
             {<br/>}
             Duration of React Training  = {course_duration}
             <br />
             {is_Join ? "I joined React Training" : "Not Joined"}
             <br />
-            {address.city} - {address.state}
+            {address.city} - {address.state} */}
 
             {/* Array Accessing */}
             
-            <ul>
+            {/* <ul>
             {
                 metro_cities.map(function(i){
                     return <li key={i} style={mystyling}>{i}</li>
@@ -79,7 +100,7 @@ function App(){
             <br />
 
 
-            {htmlCode}
+            {htmlCode} */}
 
         </>
     );
