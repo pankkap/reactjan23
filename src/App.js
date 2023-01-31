@@ -2,46 +2,19 @@
 import ReactDOM from 'react-dom/client'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import Message from './components/Message';
+import StateDemo from './components/State Management/StateDemo';
 import Summary from './components/Summary';
-
-
-let names = ["John", "Peter", "Robert"]
+import StateObject from './components/State Management/StateObject'
+import PassStateAsProps from './components/State Management/PassStateAsProps';
+import Todo from './components/State Management/Todo';
 
 function App(){
-
-    // Event Handling
-    function reverseNames(){
-        // alert("Welcome to Event Handling")
-        names.reverse();
-        console.log(names);
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);   
-    }
-
-
     return (
         <div className='container'>
-
-<table className="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-        {
-            names.map(function(name, i){
-                return (
-                    <tr key={i}>
-                        <Summary index={i} name={name} callback={reverseNames}/>
-                    </tr>
-                )
-            })
-        }
-        </tbody>
-        </table>
+            {/* <StateDemo/> */}
+            {/* <StateObject/> */}
+            {/* <PassStateAsProps/> */}
+            <Todo/>
         </div>
     );
 }
