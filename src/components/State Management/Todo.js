@@ -16,17 +16,20 @@ export default function ToDo() {
         setnewItemText("");
   }
    
+  function toggleTodo(todo)
+  {
+      settodoitems(
+        todoitems.map((item)=>
+        todo.action === item.action? {...item,done:!item.done }:item
+        )
 
-  function toggleTodo(todo) {
-    settodoitems(
-      todoitems.map((item) =>
-        item.action === todo.action ? { ...item, done: !item.done } : item
-      )
-    );
+      );
   }
 
-  function todoTableRows() {
-    return todoitems.map((item, i) => (
+
+  function todoTableRows(doneValue) {
+    return todoitems.filter((item)=>item.done ===doneValue)
+    .map((item, i) => (
       <tr key={i}>
         <td>{i + 1}</td>
         <td>{item.action}</td>
@@ -51,12 +54,13 @@ export default function ToDo() {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-12">
+        <div className="offset-md-2 col-md-8">
           <input
             type="text"
             value={newItemText}
             className="form-control"
             onChange={(e) => setnewItemText(e.target.value)}
+            placeholder="Enter new Todo"
           />
           <button className="btn btn-primary mt-2" onClick={createNewTodo}>
             Add
@@ -64,16 +68,31 @@ export default function ToDo() {
         </div>
       </div>
       <div className="row mt-4">
-        <div className="col-md-12">
+        <div className="offset-md-2 col-md-8">
           <table className="table table-bordered table-striped">
             <thead>
               <tr>
                 <th>#</th>
                 <th>Description</th>
-                <th>Done</th>
+                <th>Done | Not Done</th>
               </tr>
             </thead>
-            <tbody>{todoTableRows()}</tbody>
+            <tbody>{todoTableRows(false)}</tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="row mt-4">
+        <div className="offset-md-2 col-md-8">
+          <table className="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Description</th>
+                <th>Done | Not Done</th>
+              </tr>
+            </thead>
+            <tbody>{todoTableRows(true)}</tbody>
           </table>
         </div>
       </div>
