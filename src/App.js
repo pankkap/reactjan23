@@ -9,6 +9,7 @@ import Todo from './components/State Management/Todo';
 import StateMangInClass from './components/State Management/StateMangInClass';
 import LifeCycle from './components/State Management/LifeCycle';
 import UseEffectDemo from './components/State Management/UseEffectDemo';
+import Post from './components/Post';
 
 
 var show = false
@@ -24,7 +25,8 @@ function App(){
             {/* <StateMangInClass T_name="ReactJS" T_Duration={40}> </StateMangInClass> */}
 
             {/* <LifeCycle/> */}
-            <UseEffectDemo/>
+            {/* <UseEffectDemo/> */}
+            <Post/>
         </div>
     );
 }

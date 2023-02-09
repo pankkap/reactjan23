@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "React Training",
+      "body": "Perform CRUD operation using API Callls"
+    },
+    {
+      "id": 5,
+      "title": "React Training On",
+      "body": "This is session-13"
+    },
+    {
+      "id": 6,
+      "title": "React Training On",
+      "body": "This is session-13 running"
+    },
+    {
+      "id": "7",
+      "title": "New title created",
+      "body": "new body created"
+    }
+  ],
+  "comments": [
+    {
+      "name": "some comment",
+      "id": 1
+    },
+    {
+      "name": "Other comment",
+      "id": 2
+    }
+  ]
+}
