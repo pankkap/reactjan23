@@ -10,6 +10,10 @@ import StateMangInClass from './components/State Management/StateMangInClass';
 import LifeCycle from './components/State Management/LifeCycle';
 import UseEffectDemo from './components/State Management/UseEffectDemo';
 import Post from './components/Post';
+import ClickCounter from './components/HOC/ClickCounter';
+import HoverCounter from './components/HOC/HoverCounter';
+import ContainerComp from './components/ContainerComp';
+import UseRefDemo from './components/UseRefDemo';
 
 
 var show = false
@@ -26,7 +30,12 @@ function App(){
 
             {/* <LifeCycle/> */}
             {/* <UseEffectDemo/> */}
-            <Post/>
+            {/* <Post/> */}
+
+            {/* <ClickCounter/>
+            <HoverCounter/> */}
+            {/* <ContainerComp/> */}
+            <UseRefDemo/>
         </div>
     );
 }
