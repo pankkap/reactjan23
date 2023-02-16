@@ -14,7 +14,10 @@ import ClickCounter from './components/HOC/ClickCounter';
 import HoverCounter from './components/HOC/HoverCounter';
 import ContainerComp from './components/ContainerComp';
 import UseRefDemo from './components/UseRefDemo';
-
+import CakeCounter_1 from './components/React-Redux/CakeCounter_1';
+import {Provider } from 'react-redux'
+import store from './components/React-Redux/store'
+import CakeCounter_2 from './components/React-Redux/CakeCounter_2';
 
 var show = false
 function App(){
@@ -35,7 +38,16 @@ function App(){
             {/* <ClickCounter/>
             <HoverCounter/> */}
             {/* <ContainerComp/> */}
-            <UseRefDemo/>
+            {/* <UseRefDemo/> */}
+
+
+            <Provider store={store}>
+            <CakeCounter_1/>
+            <hr />
+            <CakeCounter_2/>
+             
+            </Provider>   
+
         </div>
     );
 }

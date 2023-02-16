@@ -11,7 +11,9 @@
     "json-server": "^0.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -19,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server":"json-server --watch db.json --host 127.0.0.1 --port 3003"
+    "json-server": "json-server --watch db.json --host 127.0.0.1 --port 3003"
   },
   "eslintConfig": {
     "extends": [
